@@ -12,7 +12,7 @@ export function Expertise() {
     useEffect(()=>{
         const getapidata = async () => {
           try{
-            const datafetch = await axios.get(`http://${process.env.REACT_APP_BACKEND_IP}/active-lawsuits/?page=${page}&items=${items}`);
+            const datafetch = await axios.get(`https://${process.env.REACT_APP_BACKEND_IP}/active-lawsuits/?page=${page}&items=${items}`);
             console.log(datafetch);
             setLawsuitsData(datafetch.data.lawsuitList);
             setTotalItem(datafetch.data.total_lawsuits)

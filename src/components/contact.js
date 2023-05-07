@@ -13,7 +13,7 @@ export function Contact() {
     const contactUsSubmit = (event) => {
         event.preventDefault();
         try {
-            axios.get(`http://${process.env.REACT_APP_BACKEND_IP}/contact-us/?fname=${encodeURIComponent(firstName)}&lname=${encodeURIComponent(LastName)}&email=${encodeURIComponent(email)}&phone=${encodeURIComponent(phone)}&message=${encodeURIComponent(message)}`)
+            axios.get(`https://${process.env.REACT_APP_BACKEND_IP}/contact-us/?fname=${encodeURIComponent(firstName)}&lname=${encodeURIComponent(LastName)}&email=${encodeURIComponent(email)}&phone=${encodeURIComponent(phone)}&message=${encodeURIComponent(message)}`)
             setSubmitted(true);
             document.getElementById('fname').value = "";
             document.getElementById('lname').value = "";

@@ -22,6 +22,7 @@ import './components/contact.css'
 import './components/footer.css'
 import { AboutUs } from './components/about-us';
 
+
 function App() {
   document.title = "American Compo Legal"
   return (

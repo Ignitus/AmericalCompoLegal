@@ -56,7 +56,7 @@ export function Header() {
     useEffect(()=>{
         const getapidata = async () => {
           try{
-            const datafetch = await axios.get(`http://${process.env.REACT_APP_BACKEND_IP}/active-lawsuits/all`);
+            const datafetch = await axios.get(`https://${process.env.REACT_APP_BACKEND_IP}/active-lawsuits/all`);
             console.log(datafetch)
             setLawsuitsData(datafetch.data.lawsuitList);
           }catch(error){  

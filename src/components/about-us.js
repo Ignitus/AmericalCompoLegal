@@ -8,7 +8,7 @@ export function AboutUs() {
     useEffect(()=>{
         const getapidata = async () => {
           try{
-            const datafetch = await axios.get(`http://${process.env.REACT_APP_BACKEND_IP}/about-us/`);
+            const datafetch = await axios.get(`https://${process.env.REACT_APP_BACKEND_IP}/about-us/`);
             setAboutusData(datafetch.data);
           }catch(error){  
             console.log(error);

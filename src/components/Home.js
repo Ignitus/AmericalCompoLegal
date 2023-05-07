@@ -16,7 +16,7 @@ export function Home() {
     useEffect(()=>{
         const getapidata = async () => {
           try{
-            const datafetch = await axios.get(`http://${process.env.REACT_APP_BACKEND_IP}/cases/`);
+            const datafetch = await axios.get(`https://${process.env.REACT_APP_BACKEND_IP}/cases/`);
             setCaseData(datafetch.data.caseList);
           }catch(error){  
             console.log(error);
